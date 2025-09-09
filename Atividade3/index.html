@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Kenji Funaki">
+    <meta name="description" content="Site explicativo sobre APIs">
+    <meta name="keywords" content="API, REST, SOAP, Web, Ferramentas">
+    <link rel="stylesheet" href="./styles/style.css" />
+    <title>APIs - Guia Completo</title>
+</head>
+
+<body>
+    <header class="header-1">
+        <nav class="nav bd-grid">
+            <div>
+                <a href="#home" class="nav-logo">APIs</a>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#introducao" class="nav-link active">Introdução</a></li>
+                    <li class="nav-item"><a href="#tipos" class="nav-link">Tipos de API's</a></li>
+                    <li class="nav-item"><a href="#arquiteturas" class="nav-link">Arquiteturas</a></li>
+                    <li class="nav-item"><a href="#ferramentas" class="nav-link">Ferramentas</a></li>
+                    <li class="nav-item"><a href="#conclusao" class="nav-link">Conclusão</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="home bd-grid" id="home">
+            <div class="home-data">
+                <h1 class="home-title">
+                    Bem-vindo ao <span class="home-title-color">Guia de APIs</span><br>
+                    Entenda como funcionam as Interfaces de Programação
+                </h1>
+                <a href="#introducao" class="button">Explorar</a>
+            </div>
+
+            <div class="home-img">
+                <img src="./images/api-banner.png" alt="Ilustração representando APIs e integração de sistemas"
+                    title="Guia Completo de APIs" />
+            </div>
+        </section>
+
+        <section class="about section" id="introducao">
+            <h2 class="section-title">Introdução</h2>
+            <div class="about-container bd-grid">
+                <div>
+                    <p class="about-text">
+                        Uma API (Interface de Programação de Aplicações) é um conjunto de regras, definições e
+                        protocolos que
+                        facilita a criação e integração de softwares. <br><br>
+                        Podemos imaginar uma API como um menu em um restaurante: ela apresenta uma lista de
+                        funcionalidades
+                        disponíveis, descreve o que cada uma faz e permite que os desenvolvedores escolham quais
+                        utilizar em suas
+                        aplicações — sem precisar conhecer todos os detalhes internos de como essas funções são
+                        implementadas. <br><br>
+                        Na prática, as APIs otimizam o trabalho de desenvolvimento, reduzindo a necessidade de escrever
+                        código do zero e
+                        garantindo consistência entre diferentes aplicações que interagem com o mesmo sistema ou
+                        plataforma.
+                        Além disso, a integração entre APIs possibilita a troca de dados e funcionalidades de forma
+                        simples, contínua e
+                        segura, sem a necessidade de intervenção humana direta. <br><br>
+                        Assim, as APIs se apresentam de diversas formas e com características e objetivos distintos.
+                        Entendê-las permite fazer a escolha mais adequada, afinal, cada tipo de API se encaixa em
+                        diferentes necessidades.
+                        Ao saber como cada tipo funciona, fica mais fácil explorar todo o seu potencial, otimizando o
+                        desenvolvimento e a integração de sistemas.
+                        As APIs podem ter diferentes formatos e protocolos de comunicação, e ao compreendê-las, você
+                        aumenta as chances de manter uma comunicação sem falhas.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="tipos section" id="tipos">
+            <h2 class="section-title">Tipos de API's</h2>
+            <p>Existem diferentes tipos de APIs que se adaptam a necessidades específicas:</p>
+            <ul class="lista">
+                <li><strong>APIs Públicas:</strong> Disponíveis para qualquer desenvolvedor, normalmente usadas para
+                    ampliar integrações.</li>
+                <li><strong>APIs Privadas:</strong> Utilizadas dentro de empresas, com acesso restrito.</li>
+                <li><strong>APIs Parceiras:</strong> Compartilhadas entre organizações que possuem colaboração.</li>
+                <li><strong>APIs Compostas:</strong> Permitem combinar várias chamadas em uma única requisição.</li>
+            </ul>
+        </section>
+
+        <section class="arquiteturas section" id="arquiteturas">
+            <h2 class="section-title">Arquiteturas</h2>
+            <p>As APIs podem adotar diferentes arquiteturas de comunicação, sendo as mais comuns:</p>
+            <ul class="lista">
+                <li><strong>REST:</strong> Baseada em recursos acessados por URLs e que utiliza métodos HTTP como GET,
+                    POST, PUT e DELETE.</li>
+                <li><strong>SOAP:</strong> Usa XML para troca de mensagens e segue um padrão mais rígido.</li>
+                <li><strong>GraphQL:</strong> Permite que o cliente defina exatamente quais dados deseja receber.</li>
+                <li><strong>gRPC:</strong> Utiliza Protobuf para comunicação eficiente e de alto desempenho.</li>
+            </ul>
+        </section>
+
+        <section class="ferramentas section" id="ferramentas">
+            <h2 class="section-title">Ferramentas</h2>
+            <p>Algumas ferramentas auxiliam no desenvolvimento, documentação e monitoramento de APIs:</p>
+            <ul class="lista">
+                <li><strong>Postman e Insomnia:</strong> Para testes de requisições.</li>
+                <li><strong>Swagger e Redoc:</strong> Para documentação.</li>
+                <li><strong>Kong, Apigee e AWS API Gateway:</strong> Para gestão e segurança.</li>
+                <li><strong>New Relic, Datadog e Prometheus:</strong> Para monitoramento.</li>
+            </ul>
+        </section>
+
+        <section class="about section" id="conclusao">
+            <h2 class="section-title">Conclusão</h2>
+            <div class="about-container bd-grid">
+                <div>
+                    <p class="about-text">
+                        As APIs são fundamentais no mundo moderno da tecnologia, pois permitem que diferentes sistemas
+                        se comuniquem de forma eficiente e segura.
+                        Ao conhecer seus tipos, arquiteturas e ferramentas, os desenvolvedores conseguem criar soluções
+                        mais escaláveis, flexíveis e integradas.
+                        Entender APIs significa dominar um dos pilares do desenvolvimento de software atual.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2025 - Desenvolvido por Kenji Funaki</p>
+    </footer>
+</body>
+
+</html>
