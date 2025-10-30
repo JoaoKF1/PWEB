@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Abra a Janela</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 50px;
+      background-color: #eef2f3;
+    }
+
+    h1 {
+      color: #333;
+    }
+
+    img {
+      width: 300px;
+      height: auto;
+      cursor: pointer;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+      transition: transform 0.2s;
+    }
+
+    img:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+
+  <h1 id="titulo">Janela Fechada</h1>
+  <img id="janela" src="janelaFechada.png" alt="Janela">
+
+  <script src="script.js"></script>
+
+</body>
+</html>

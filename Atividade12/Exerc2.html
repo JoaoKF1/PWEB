@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Contas Bancárias</title>
+</head>
+<body>
+<script>
+class Conta {
+    constructor(){
+        this._nomeCorrentista = "";
+        this._banco = "";
+        this._numeroConta = "";
+        this._saldo = 0;
+    }
+    set nomeCorrentista(value){ this._nomeCorrentista = value; }
+    get nomeCorrentista(){ return this._nomeCorrentista; }
+
+    set banco(value){ this._banco = value; }
+    get banco(){ return this._banco; }
+
+    set numeroConta(value){ this._numeroConta = value; }
+    get numeroConta(){ return this._numeroConta; }
+
+    set saldo(value){ this._saldo = value; }
+    get saldo(){ return this._saldo; }
+}
+
+class Corrente extends Conta {
+    constructor(){
+        super();
+        this._saldoEspecial = 0;
+    }
+    set saldoEspecial(value){ this._saldoEspecial = value; }
+    get saldoEspecial(){ return this._saldoEspecial; }
+}
+
+class Poupanca extends Conta {
+    constructor(){
+        super();
+        this._juros = 0;
+        this._dataVencimento = "";
+    }
+    set juros(value){ this._juros = value; }
+    get juros(){ return this._juros; }
+
+    set dataVencimento(value){ this._dataVencimento = value; }
+    get dataVencimento(){ return this._dataVencimento; }
+}
+
+var c = new Corrente();
+c.nomeCorrentista = prompt("Nome do correntista:");
+c.banco = prompt("Banco:");
+c.numeroConta = prompt("Número da conta:");
+c.saldo = parseFloat(prompt("Saldo:"));
+c.saldoEspecial = parseFloat(prompt("Saldo especial:"));
+
+alert(
+    "Conta Corrente\n" +
+    "Nome: " + c.nomeCorrentista + "\n" +
+    "Banco: " + c.banco + "\n" +
+    "Conta: " + c.numeroConta + "\n" +
+    "Saldo: " + c.saldo + "\n" +
+    "Saldo Especial: " + c.saldoEspecial
+);
+
+var p = new Poupanca();
+p.nomeCorrentista = prompt("Nome do correntista:");
+p.banco = prompt("Banco:");
+p.numeroConta = prompt("Número da conta:");
+p.saldo = parseFloat(prompt("Saldo:"));
+p.juros = parseFloat(prompt("Juros (%):"));
+p.dataVencimento = prompt("Data de vencimento:");
+
+alert(
+    "Conta Poupança\n" +
+    "Nome: " + p.nomeCorrentista + "\n" +
+    "Banco: " + p.banco + "\n" +
+    "Conta: " + p.numeroConta + "\n" +
+    "Saldo: " + p.saldo + "\n" +
+    "Juros: " + p.juros + "%\n" +
+    "Vencimento: " + p.dataVencimento
+);
+</script>
+</body>
+</html>

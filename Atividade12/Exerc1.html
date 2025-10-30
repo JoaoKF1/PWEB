@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Retângulo</title>
+</head>
+<body>
+<script>
+function Retangulo(x, y){
+    this.base = x;
+    this.altura = y;
+    this.calcularArea = function(){
+        return this.base * this.altura;
+    }
+}
+
+var base = parseFloat(prompt("Informe a base do retângulo:"));
+var altura = parseFloat(prompt("Informe a altura do retângulo:"));
+
+var r = new Retangulo(base, altura);
+alert("Área do retângulo = " + r.calcularArea());
+</script>
+</body>
+</html>
